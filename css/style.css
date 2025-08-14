@@ -2576,9 +2576,9 @@ p + .list-marked {
     display: flex;            /* ativa Flexbox */
     justify-content: center;  /* centraliza horizontal */
     align-items: center;      /* centraliza vertical */
-    width: 280px;
-    height: 280px;
-    font-size: 180px;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
     line-height: 36px;
     border-radius: 50%;
     border: 1px solid #373435;
