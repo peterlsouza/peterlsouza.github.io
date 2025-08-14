@@ -685,7 +685,29 @@
 			}
 		}
 	});
+document.querySelectorAll("[data-fancybox='gallery']").forEach((el, index) => {
+  el.addEventListener(
+    "click",
+    function(ev) {
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
 
+      // Cria a lista completa da galeria
+      const galleryItems = Array.from(document.querySelectorAll("[data-fancybox='gallery']")).map(img => ({
+        src: img.href,
+        type: "image"
+      }));
+
+      // Inicia o Fancybox no índice da imagem clicada
+      Fancybox.show(galleryItems, {
+        Thumbs: true,
+        Toolbar: { display: ["zoom", "slideshow", "fullscreen", "download", "close"] },
+        startIndex: index // ← isso faz abrir a imagem correta
+      });
+    },
+    true
+  );
+});
 	$(window).on("scroll", function() {
 		var scrollHeight = $(document).height();
 		var scrollPosition = $(window).height() + $(window).scrollTop();
