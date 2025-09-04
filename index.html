@@ -1,429 +1,297 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300%7CQuestrial">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-body">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Floyd: Brain Damage & Eclipse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <!-- <h2 class="preloader-title">Pet</h2> -->
-      </div>
-    </div>
-    <div class="page"><a class="section section-banner d-none d-xl-flex" href="" ></a>
-      <!-- Page Header-->
-      <header class="page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap position-relative">
-          <nav class="rd-navbar" data-layout="rd-navbar-sidebar" data-device-layout="rd-navbar-sidebar" data-sm-layout="rd-navbar-sidebar" data-sm-device-layout="rd-navbar-sidebar" data-md-layout="rd-navbar-sidebar" data-md-device-layout="rd-navbar-sidebar" data-lg-layout="rd-navbar-sidebar" data-lg-device-layout="rd-navbar-sidebar" data-xl-layout="rd-navbar-sidebar" data-xl-device-layout="rd-navbar-sidebar" data-xxl-layout="rd-navbar-sidebar" data-xxl-device-layout="rd-navbar-sidebar" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-auto-height="false" data-sm-auto-height="false" data-md-auto-height="false" data-lg-auto-height="false" data-xl-auto-height="false" data-xxl-auto-height="false">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <!-- <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button> -->
-                  <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"></a>
-                  </div>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
+            color: #e0e0ff;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(20, 20, 50, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(100, 80, 255, 0.4);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #7c6aea;
+        }
+        
+        h1 {
+            color: #9c88ff;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(156, 136, 255, 0.7);
+        }
+        
+        h2 {
+            color: #7c6aea;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #7c6aea;
+        }
+        
+        h3 {
+            color: #9c88ff;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .album-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+            align-items: center;
+        }
+        
+        .album-cover {
+            flex: 1;
+            min-width: 300px;
+            border: 5px solid #9c88ff;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(156, 136, 255, 0.5);
+            transition: transform 0.5s ease;
+        }
+        
+        .album-cover:hover {
+            transform: scale(1.03);
+        }
+        
+        .album-details {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .prism {
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(90deg, 
+                #ff0000 0%, #ff7f00 15%, #ffff00 30%, 
+                #00ff00 50%, #0000ff 65%, #4b0082 80%, #9400d3 100%);
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        .songs-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .song-card {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(40, 40, 80, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(156, 136, 255, 0.4);
+        }
+        
+        .lyric-excerpt {
+            background: rgba(50, 50, 100, 0.4);
+            padding: 15px;
+            border-left: 5px solid #7c6aea;
+            margin: 20px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .interactive-section {
+            background: rgba(30, 30, 70, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .trivia-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(60, 60, 120, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .trivia-item:hover {
+            background: rgba(80, 80, 150, 0.4);
+        }
+        
+        .hidden-content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgba(40, 40, 90, 0.5);
+            border-radius: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #7c6aea;
+            color: #8888cc;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .album-cover, .song-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pink Floyd: Brain Damage & Eclipse</h1>
+            <p>Uma jornada pelo lado obscuro da mente</p>
+        </header>
+        
+        <div class="album-info">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/3/3b/Dark_Side_of_the_Moon.png" alt="Capa do álbum The Dark Side of the Moon" class="album-cover">
+            
+            <div class="album-details">
+                <h2>The Dark Side of the Moon (1973)</h2>
+                <p>O oitavo álbum de estúdio do Pink Floyd é amplamente considerado uma das maiores obras da história da música. O álbum explora temas como conflito, ganância, envelhecimento, morte e loucura, com "Brain Damage" e "Eclipse" formando o clímax conceitual da obra.</p>
+                <p>O álbum permaneceu na parada Billboard 200 por incríveis 958 semanas (mais de 18 anos), um recorde nunca antes alcançado.</p>
+            </div>
+        </div>
+        
+        <div class="prism"></div>
+        
+        <h2>As Músicas</h2>
+        <div class="songs-container">
+            <div class="song-card">
+                <h3>Brain Damage</h3>
+                <p>Uma das composições mais pessoais de Roger Waters, "Brain Damage" explora a loucura e a fragilidade mental, inspirada pelo declínio mental de Syd Barrett, membro fundador do Pink Floyd.</p>
+                
+                <div class="lyric-excerpt">
+                    "The lunatic is on the grass<br>
+                    The lunatic is on the grass<br>
+                    Remembering games and daisy chains and laughs<br>
+                    Got to keep the loonies on the path"
                 </div>
                 
-              </div>
+                <p>A música contrasta imagens bucólicas com a realidade da doença mental, usando a metáfora do "lunático na grama" que precisa ser mantido "no caminho".</p>
             </div>
-    
-          </nav>
-        </div>
-      </header>
-      <!-- DePaletra-->
-      <section class="section section-full section-inset-1 bg-default text-center bg-image background-position-1" id="home" style="background-image: url(images/background22.jpg)">
-        <div class="container">
-          <div class="title-style-1-wrap">
-            <div class="oh-desktop wow slideInLeft">
-              <div class="rd-navbar-brand"><img class="brand-logo-desktop" src="images/logo-default-384x188.png" alt="" width="500" height="350"/>
-            </div> 
-          </div> 
-       
-          <!-- </div><a class="button button-default wow fadeInUp" href="about.html">More about us</a> -->
-        <!-- </div> -->
-      </section>
-      <!-- About Us-->
-      <section class="section section-full section-xxl bg-default" id="about">
-        <div class="container">
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-9 col-md-5 cube-classic-wrap">
-              <div class="subtitle-classic wow fadeInLeft">Caza Bô</div>
-              <h2 class="wow fadeInLeft">Trançando<br class="d-none d-md-block"><span class="text-primary">tradição e beleza</span> em cada <br class="d-none d-md-block">detalhe
-              </h2>
-              <div class="cube-classic cube-classic-1"><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span>
-              </div>
-            </div>
-            <div class="col-md-7 col-lg-6 col-xl-5">
-              <p class="wow fadeInRight">Bem-vindo ao Caza Bô! </p><br>
-                    Aqui, cada palhinha é cuidadosamente tecida à mão, com habilidade, carinho e um toque de história. Produzimos telinhas sextavadas e outras tramas que transformam móveis comuns em peças únicas, cheias de personalidade.</p>
-              <p class="wow fadeInRight">Nossa palhinha artesanal é confeccionada 100% manualmente, seguindo técnicas tradicionais fio a fio que valorizam cada detalhe, garantindo rigidez, durabilidade e excelente fixação.</p>
-              <p class="wow fadeInRight">Seja para móveis planejados, restauração ou formatos variados — grandes ou pequenos — nossa palhinha é feita sob medida, sem desperdícios, e instalada com garantia de resistência e longa durabilidade.</p>
-            </div>
-
-            <div class="video-container" style="text-align:center; margin-top:30px;">
-              <h3 class="wow fadeInLeft">Conheça um pouco mais da nossa <br class="d-none d-md-block"><span class="text-primary">história..</span> <br class="d-none d-md-block">
-              </h3>
-  <a href="https://globoplay.globo.com/v/13788627/" target="_blank" style="display:inline-block; text-decoration:none;">
-    <img src="images/globoplay.png" alt="Assistir vídeo Caza Bô" style="max-width:70%; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
-    <!-- <div style="margin-top:10px; font-size:18px; font-weight:bold; color:#333;">▶ Assistir nossa história no Globoplay</div> -->
-  </a>
-</div>
-          </div>
-        </div>
-      </section>
-      <!-- Selected works-->
-      <section class="section section-full section-md bg-gray-100 section-background-custom" id="works">
-        <div class="container">
-          <div class="row row-30 justify-content-center justify-content-lg-end align-items-md-center">
-            <div class="col-sm-8 col-md-6 col-lg-5 cube-classic-wrap">
-              <div class="subtitle-classic wow fadeInLeft">"Da simplicidade da palha nascem padrões que contam histórias"</div>
-              <h2 class="wow fadeInLeft" data-wow-delay=".1s">Nossos Modelos: <br class="d-none d-md-block">Tradição Feita  <br class="d-none d-md-block">à Mão
-              </h2>
-              <p class="wow fadeInLeft">Cada peça que criamos é única, assim como o móvel que vai vestir. Explore alguns dos modelos de palhinha artesanal confeccionado com carinho:</p>
-              <div class="cube-classic cube-classic-2"><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span>
-              </div>
-            </div>
-            <div class="col-sm-8 col-md-6 wow blurIn">
-              <div class="inset-xl-left-25">
-                <!-- Owl Carousel-->
-                <div class="owl-carousel owl-style-1" data-loop="true" data-items="1" data-nav="true">
-                          <img src="images/index-1-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-2-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-3-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-4-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-5-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-6-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-7-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-8-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-9-618x614.jpeg" alt="" width="618" height="614"/>
-                          <img src="images/index-10-618x614.jpeg" alt="" width="618" height="614"/>
+            
+            <div class="song-card">
+                <h3>Eclipse</h3>
+                <p>Servindo como conclusão magistral para o álbum, "Eclipse" sintetiza todos os temas anteriormente explorados: tempo, dinheiro, guerra, morte e, finalmente, a loucura.</p>
+                
+                <div class="lyric-excerpt">
+                    "All that you touch, and all that you see<br>
+                    All that you taste, all you feel<br>
+                    And all that you love, and all that you hate<br>
+                    All you distrust, all you save"
                 </div>
-              </div>
+                
+                <p>A música constrói gradualmente até um clímax poderoso com o coro gospel, terminando com a famosa linha "There is no dark side of the moon really... matter of fact it's all dark" seguida pelo batimento cardíaco que inicia e termina o álbum.</p>
             </div>
-          </div>
         </div>
-        <div class="background-custom-1 bg-default"></div>
-      </section>
-      <!-- Portfolio-->
-      <section class="section section-full section-xl bg-default text-md-center" id="projects">
-  <div class="container">
-    <div class="subtitle-classic wow fadeInUp">Portfolio</div>
-    <h2>
-      <span class="d-inline-block wow fadeInLeft">Conheça alguns dos nossos</span>
-      <span class="text-primary d-inline-block wow fadeInRight">projetos</span>
-    </h2>
-
-    <div class="row row-lg row-30">
-      
-      <!-- Foto 1 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP00.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP00.jpeg" alt="Projeto 1" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 2 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".3s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP01.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP01.jpeg" alt="Projeto 2" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 3 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP02.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP02.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 4 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP03.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP03.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 5 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP04.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP04.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-       <!-- Foto 6 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP10.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP10.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 7 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP11.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP11.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-
-      <!-- Foto 8 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP05.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP05.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-        <!-- Foto 9 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP06.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP06.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 10 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP07.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP07.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 11 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP08.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP08.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 12 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP09.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP09.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 13 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP12.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP12.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 14 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP13.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP13.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 15 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP14.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP14.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 16 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP15.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP15.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 17 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP16.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP16.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 18 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP17.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP17.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 19 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP18.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP18.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 20 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP19.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP19.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-       <!-- Foto 21 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CazaBoUP20.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CazaBoUP20.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-     
-          <!-- Foto 22 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaSquare00.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaSquare00.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 23 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaSquare01.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaSquare01.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-       <!-- Foto 24 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaSquare02.jpeg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaSquare02.jpeg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 25 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaDown00.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaDown00.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-      <!-- Foto 26 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaDown01.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaDown01.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-       <!-- Foto 27 -->
-      <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".4s">
-        <article class="project-classic box-md">
-          <a data-fancybox="gallery" href="images/CasaDown02.jpg" data-caption="CazaBo - Portfolio">
-            <img src="images/CasaDown02.jpg" alt="Projeto 3" width="370" height="262"/>
-          </a>
-        </article>
-      </div>
-
-    </div>
-  </div>
-</section>
-      <!-- Page Footer-->
-      <footer class="section footer-classic  section-full-1 section-sm section-inset-2 bg-gray-3 context-dark text-md-center" id="contacts">
-        <div class="container">
-          <div class="subtitle-classic wow fadeInUp">Entre em contato!</div>
-          <h2><span class="d-inline-block wow fadeInLeft">Vamos realizar o seu </span> <span class="d-inline-block wow fadeInRight">sonho..</span></h2>
-         <div class="footer-classic-list-social wow fadeInUp">
-            <ul class="list-inline list-social list-inline-sm">
-              <li><a class="icon fa fa-envelope" href="mailto:aline@cazabo.com.br"></a></li>
-              <li><a class="icon fa fa-whatsapp" target="_blank" href="https://wa.me/5519991003512?text=Olá, gostaria de mais informações!"></a></li>
-              <!-- <li><a class="icon fa fa-facebook" href="#"></a></li> -->
-              <li><a class="icon fa fa-instagram" target="_blank" href="https://www.instagram.com/cazaboatelie"></a></li>
-            </ul>
-            <!-- <p class="rights wow fadeInUp"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span></span><span>.&nbsp;</span><span>All rights reserved.</span><br/></p> -->
-          </div>
+        
+        <div class="prism"></div>
+        
+        <h2>A Transição Perfeita</h2>
+        <p>As duas músicas são frequentemente reproduzidas juntas, com "Brain Damage" fluindo diretamente para "Eclipse", criando uma das transições mais famosas da história do rock. Esta transição representa a jornada da loucura individual para a totalidade universal.</p>
+        
+        <p>O lunático da música não está apenas "na grama", mas "está no meu quarto" - mostrando que a loucura é parte de todos nós. A conclusão com "Everything under the sun is in tune" sugere que mesmo a loucura tem seu lugar no universo.</p>
+        
+        <div class="interactive-section">
+            <h2>Curiosidades Interativas</h2>
+            
+            <div class="trivia-item" onclick="toggleTrivia(1)">
+                📌 Clique para revelar: Sobre a risada icônica
+            </div>
+            <div class="hidden-content" id="trivia-1">
+                A risada icônica em "Brain Damage" foi gravada do gerente de palco do Pink Floyd, Peter Watts (pai da atriz Naomi Watts). A risada foi acelerada e processada para criar o efeito distintivo.
+            </div>
+            
+            <div class="trivia-item" onclick="toggleTrivia(2)">
+                📌 Clique para revelar: O significado do batimento cardíaco
+            </div>
+            <div class="hidden-content" id="trivia-2">
+                O batimento cardíaco que inicia e termina o álbum (e que é ouvido no final de "Eclipse") representa o ciclo da vida. Foi gravado pelo engenheiro de som Alan Parsons usando um estetoscópio e um microfone.
+            </div>
+            
+            <div class="trivia-item" onclick="toggleTrivia(3)">
+                📌 Clique para revelar: A conexão com Syd Barrett
+            </div>
+            <div class="hidden-content" id="trivia-3">
+                A linha "And if the band you're in starts playing different tunes" refere-se diretamente à experiência de Roger Waters com Syd Barrett, cujo comportamento imprevisível e uso de LSD levaram à sua saída da banda.
+            </div>
+            
+            <div class="trivia-item" onclick="toggleTrivia(4)">
+                📌 Clique para revelar: A capa do álbum
+            </div>
+            <div class="hidden-content" id="trivia-4">
+                A icônica capa com o prisma foi criada pelo designer Storm Thorgerson. O prisma representa a luz do palco, o espectro de cores e a ambição lyrica do álbum. A simplicidade e profundidade do design fizeram dela uma das capas mais reconhecíveis da história.
+            </div>
         </div>
-      </footer>
+        
+        <div class="prism"></div>
+        
+        <h2>Legado e Influência</h2>
+        <p>Quase 50 anos após seu lançamento, "The Dark Side of the Moon" continua a ser um dos álbuns mais vendidos e influentes de todos os tempos. A combinação de "Brain Damage" e "Eclipse" representa um dos momentos mais poderosos da discografia do Pink Floyd, mostrando a percepção atemporal da banda sobre a condição humana.</p>
+        
+        <p>As músicas continuam a ressoar com novas gerações de ouvintes, demonstrando o poder duradouro da música para explorar temas profundos e universais.</p>
+        
+        <footer>
+            <p>Pink Floyd - The Dark Side of the Moon (1973)</p>
+            <p>Uma das obras mais influentes da história da música</p>
+            <p>© 2023 Análise Musical - Todos os direitos reservados aos artistas</p>
+        </footer>
     </div>
-    <div class="snackbars" id="form-output-global"></div>
 
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6/dist/fancybox/fancybox.umd.js"></script>
     <script>
-            document.addEventListener("DOMContentLoaded", function() {
-            // Inicializa WOW normalmente (caso não esteja inicializado em outro lugar)
-            if (typeof WOW === "function") {
-              new WOW().init();
+        function toggleTrivia(id) {
+            const content = document.getElementById('trivia-' + id);
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
             }
-
-            // Garante que os elementos possam ser clicados
-            document.querySelectorAll("[data-fancybox='gallery']").forEach(el => {
-              el.style.pointerEvents = "auto";
-            });
-
-            // Força prioridade do Fancybox no clique
-            document.querySelectorAll("[data-fancybox='gallery']").forEach(el => {
-              el.addEventListener("click", function(ev) {
-                ev.stopImmediatePropagation(); // bloqueia WOW e outros scripts
-                ev.preventDefault();           // evita abrir nova aba
-                Fancybox.show([{ src: this.href, type: "image" }], {
-                  Thumbs: true,
-                  Toolbar: { display: ["zoom", "slideshow", "fullscreen", "download", "close"] }
-                });
-              }, true); // captura antes de outros scripts
-            });
-          });
+        }
     </script>
-  </body>
+</body>
 </html>
